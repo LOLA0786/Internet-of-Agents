@@ -5,8 +5,7 @@ from consumer_agent import ConsumerAgent
 
 if __name__ == "__main__":
     print("Launching AgentNet: Internet of Agents Prototype")
-    print("Agents will collaborate to trade data and hit a shared goal 
-score >80.\n")
+    print("Agents will collaborate to trade data and hit a shared goal score >80.\n")
 
     # Init agents on different ports (local network sim)
     producer = ProducerAgent(5000)
@@ -25,5 +24,4 @@ score >80.\n")
         print("\nStopping agents...")
     finally:
         producer.running = trader.running = consumer.running = False
- print("Demo complete! Check GitHub for expansions (e.g., real MCP).")
-
+        print("Demo complete! Check GitHub for expansions (e.g., real MCP).")
